@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.CreateCube_Controller">
+   <children>
+      <TextField fx:id="cubeName" layoutX="153.0" layoutY="121.0" prefHeight="23.0" prefWidth="192.0" promptText="Enter Cube Name" />
+      <JFXButton fx:id="BtnCreate" layoutX="1017.0" layoutY="118.0" onAction="#setBtnCube" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #FF0E4B;" stylesheets="@Css/Logins.css" text="Create " textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="32.0" layoutY="114.0" prefHeight="39.0" prefWidth="71.0" text="Name :">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="32.0" layoutY="171.0" prefHeight="558.0" prefWidth="1070.0">
+        <columns>
+          <TableColumn prefWidth="364.0" text="Cube Name" />
+          <TableColumn prefWidth="320.0" text="Nbr_Tables" />
+            <TableColumn prefWidth="385.0" text="Nbr_Associations " />
+        </columns>
+      </TableView>
+      <Pane layoutX="-4.0" prefHeight="92.0" prefWidth="1193.0" style="-fx-background-color: #2A3447;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Cube :  ">
+               <font>
+                  <Font name="Cambria Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

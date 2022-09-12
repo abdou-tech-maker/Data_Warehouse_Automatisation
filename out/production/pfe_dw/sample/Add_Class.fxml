@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Class_Controller">
+    <children>
+        <Pane layoutY="-1.0" prefHeight="92.0" prefWidth="1187.0" style="-fx-background-color: #2A3447;">
+            <children>
+                <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding Classes :" wrappingWidth="192.0">
+                    <font>
+                        <Font name="Cambria Bold" size="26.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <TextField fx:id="cls" layoutX="160.0" layoutY="128.0" prefHeight="25.0" prefWidth="192.0" promptText="Enter Class Name " />
+        <Text layoutX="29.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Name :" wrappingWidth="119.494140625">
+            <font>
+                <Font name="Cambria Bold" size="14.0" />
+            </font>
+        </Text>
+      <JFXButton fx:id="BtnAddClass" layoutX="1035.0" layoutY="125.0" onAction="#Add_Class" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #FF0E4B;" stylesheets="@Css/Logins.css" text="Add Class" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="classListView" layoutX="21.0" layoutY="198.0" prefHeight="546.0" prefWidth="1154.0">
+        <columns>
+          <TableColumn prefWidth="254.0" text="Class Name" />
+            <TableColumn prefWidth="285.0" text="Attribut Name " />
+          <TableColumn prefWidth="283.0" text="Type" />
+            <TableColumn prefWidth="331.0" text="Data Type" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="cubeChoiceBox" layoutX="756.0" layoutY="128.0" prefWidth="150.0" />
+      <Text layoutX="656.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cube:" wrappingWidth="39.494140625">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

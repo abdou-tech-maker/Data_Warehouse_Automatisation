@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="tableContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="176.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClassTableCtrl">
+   <children>
+      <Label fx:id="className" alignment="CENTER" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: #FE265F;" text="Class Name" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font></Label>
+      <Separator prefWidth="200.0" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</VBox>

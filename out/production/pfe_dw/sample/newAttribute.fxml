@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.NewAttributeCtrl">
+    <children>
+        <Pane layoutY="-1.0" prefHeight="92.0" prefWidth="1194.0" style="-fx-background-color: #2A3447;">
+            <children>
+                <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding Attributs :" wrappingWidth="213.0">
+                    <font>
+                        <Font name="Cambria Bold" size="26.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+      <Text layoutX="29.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="119.494140625">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="attrNameField" layoutX="160.0" layoutY="255.0" prefHeight="25.0" prefWidth="192.0" promptText="Enter Attributs Name" />
+      <Text layoutX="733.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Type :" wrappingWidth="82.494140625">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="attrTypeChoiceBox" layoutX="922.0" layoutY="255.0" prefHeight="25.0" prefWidth="192.0" />
+      <TableView fx:id="attrListView" layoutX="16.0" layoutY="402.0" prefHeight="306.0" prefWidth="1122.0">
+        <columns>
+          <TableColumn prefWidth="326.0" text="Attribute id" />
+            <TableColumn prefWidth="239.0" text="Attribut Name " />
+          <TableColumn prefWidth="252.0" text="Type" />
+            <TableColumn prefWidth="304.0" text="Class" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="addAttributeBtn" layoutX="1001.0" layoutY="346.0" onAction="#onClickAddAttribute" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #FF0E4B;" stylesheets="@Css/Logins.css" text="Add Attribut" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="76.0" />
+         </font>
+      </JFXButton>
+      <ChoiceBox fx:id="classTableChoiceBox" layoutX="160.0" layoutY="174.0" prefHeight="25.0" prefWidth="192.0" />
+      <Text layoutX="29.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class : " wrappingWidth="57.494140625">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="cubeChoiceBox" layoutX="922.0" layoutY="173.0" onAction="#onChangeCube" prefHeight="25.0" prefWidth="192.0" />
+      <Text layoutX="725.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CubeName : " wrappingWidth="97.494140625">
+         <font>
+            <Font name="Cambria Bold" size="15.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
